@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+species = ["Guinea Pig", "Dog", "Cat", "Ferret", "Rabbit", "Parrot"]
+
+names = ["Sander", "Ofer", "Linh", "Eugenia", "Stephan", "Daan"]
+
+10.times do
+  Pet.create(
+    name: names.sample,
+    address: "Amsterdam",
+    species: species.sample
+  )
+end
